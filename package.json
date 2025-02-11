@@ -1,8 +1,8 @@
 {
-  "name": "bolt.diy-cdk",
+	"name": "bolt-diy-cdk",
   "version": "0.1.0",
   "bin": {
-    "bolt.diy-cdk": "bin/bolt.diy-cdk.js"
+		"bolt-diy-cdk": "bin/bolt-diy-cdk.js"
   },
   "scripts": {
     "build": "tsc",

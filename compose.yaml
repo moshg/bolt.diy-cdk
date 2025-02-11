@@ -27,7 +27,7 @@ services:
       # NOTE: You need to add this REDIRECT_URL to the "Allowed callback URLs" in the App client settings of AWS Cognito.
       # Also, you need to add the signout url "http://localhost:4180/oauth2/sign_out" to the "Allowed sign-out URLs".
       - OAUTH2_PROXY_REDIRECT_URL=http://localhost:4180/oauth2/callback
-      - OAUTH2_PROXY_OIDC_ISSUER_URL=https://cognito-idp.${COGNITO_REGION}.amazonaws.com/${COGNITO_USER_POOL_ID}
-      - OAUTH2_PROXY_LOGIN_URL="https://${COGNITO_LOGIN_SUBDOMAIN}.auth.${COGNITO_REGION}.amazoncognito.com/oauth2/authorize"
-      - OAUTH2_PROXY_PROFILE_URL="https://${COGNITO_LOGIN_SUBDOMAIN}.auth.${COGNITO_REGION}.amazoncognito.com/oauth2/userInfo"
-      - OAUTH2_PROXY_REDEEM_URL="https://${COGNITO_LOGIN_SUBDOMAIN}.auth.${COGNITO_REGION}.amazoncognito.com/oauth2/token"
+      - OAUTH2_PROXY_OIDC_ISSUER_URL=https://cognito-idp.${AWS_REGION}.amazonaws.com/${COGNITO_USER_POOL_ID}
+      - OAUTH2_PROXY_LOGIN_URL="https://${COGNITO_LOGIN_SUBDOMAIN}.auth.${AWS_REGION}.amazoncognito.com/oauth2/authorize"
+      - OAUTH2_PROXY_PROFILE_URL="https://${COGNITO_LOGIN_SUBDOMAIN}.auth.${AWS_REGION}.amazoncognito.com/oauth2/userInfo"
+      - OAUTH2_PROXY_REDEEM_URL="https://${COGNITO_LOGIN_SUBDOMAIN}.auth.${AWS_REGION}.amazoncognito.com/oauth2/token"
